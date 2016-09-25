@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    @keyframes example {
+        from {
+            background-color: green;
+            top: 0px;
+            left: 100px;
+            /*是原来的样式（开始动的时候会覆盖最初的）*/
+        }
+        to {
+            top: 400px;
+            left: 800px;
+            background-color: yellow;
+        }
+        /*放置样式表*/
+        /*动画是缓进缓出，执行完之后回复原装*/
+    }
+    
+    div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 1000ms;
+        /*支持秒和毫秒*/
+        /*持续时间*/
+    }
+    /*样式定义没有分先后顺序*/
+    </style>
+</head>
+
+<body>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <div></div>
+    <p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+</body>
+
+</html>

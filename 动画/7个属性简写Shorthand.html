@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        -webkit-animation: myfirst 1s linear 0.5s 1 alternate forwards;
+        /* Chrome, Safari, Opera */
+        animation: myfirst 1s linear 0.5s 1 alternate forwards;
+        /*关键帧名 执行时间 过渡方式 推迟时间 执行次数 运动方向*/
+    }
+    /* Chrome, Safari, Opera */
+    
+    .zero {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    
+    @-webkit-keyframes myfirst {
+        /*每一个关键帧就是一个样式表集合*/
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+            /*过程如何在封装样式表？？*/
+        }
+        50% {
+            background-color: blue;
+            left: 500px;
+            top: 500px;
+        }
+        /*会动态检索百分比*/
+        25% {
+            background-color: yellow;
+            left: 500px;
+            top: 0px;
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 500px;
+        }
+        100% {
+            background-color: red;
+            left: 1000px;
+            top: 0px;
+        }
+    }
+    /* Standard syntax */
+    
+    @keyframes myfirst {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+        /*无效过程*/
+        50% {
+            background-color: blue;
+            left: 500px;
+            top: 500px;
+        }
+        25% {
+            background-color: yellow;
+            left: 500px;
+            top: 0px;
+        }
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 500px;
+        }
+        100% {
+            background-color: red;
+            left: 1000px;
+            top: 0px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    <div></div>
+</body>
+
+</html>

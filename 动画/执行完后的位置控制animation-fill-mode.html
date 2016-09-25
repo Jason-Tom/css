@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        -webkit-animation: mymove 3s;
+        /* Chrome, Safari, Opera */
+        -webkit-animation-iteration-count: 2;
+        /* Chrome, Safari, Opera */
+        -webkit-animation-fill-mode: forwards;
+        /* Chrome, Safari, Opera */
+        animation: mymove 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    /* Chrome, Safari, Opera */
+    
+    @keyframes mymove {
+        from {
+            top: 0px;
+        }
+        to {
+            top: 200px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <p><strong>Note:</strong> The animation-fill-mode property is not supported in Internet Explorer 9 and earlier versions.</p>
+    <div></div>
+</body>
+
+</html>

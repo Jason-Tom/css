@@ -1,0 +1,4 @@
+.lalala {
+    background-image: url('../img/global.png');
+    /*js文件爱你却不用着这样，直接导入到主文件里面进行定位*/
+}

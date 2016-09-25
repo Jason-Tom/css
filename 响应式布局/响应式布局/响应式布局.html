@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>响应式布局</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="css1.css" media="screen and (max-width: 500px)">
+    <!-- 响应式布局使用使用多套css，也可以使用局部的css -->
+    <style type="text/css" media="screen">
+    h1 {
+        background-color: yellow;
+    }
+    
+    @media screen and (max-width: 500px) {
+        h1 {
+            background-color: green;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <h1>lalala</h1>
+</body>
+
+</html>
